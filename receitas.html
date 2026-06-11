@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog - Home</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre Mim</a></li>
+                <li><a href="curriculum.html">Currículo</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="receitas.html">Receitas Favoritas</a></li>
+            </ul>
+            <div class="controles-nav">
+                <button id="btn-aumentar" title="Aumentar fonte">
+                    <span class="material-symbols-outlined">zoom_in</span>
+                </button>
+                <button id="btn-diminuir" title="Diminuir fonte">
+                    <span class="material-symbols-outlined">zoom_out</span>
+                </button>
+                <button id="btn-dark-mode" title="Modo Noturno">
+                    <span class="material-symbols-outlined">settings_night_sight</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    <h1>Receitas Favoritas</h1>
+    <p>Aqui estão algumas das minhas receitas preferidas para compartilhar com vocês. Clique na seta ao lado de cada receita para ver o passo a passo.</p>
+
+    <a href="mousse.html" class="receita-link-especial">
+        <span>Mousse de Maracujá (Receita do Prof. Pablo)</span>
+        <span class="material-symbols-outlined">open_in_new</span>
+    </a>
+
+    <details class="receita">
+        <summary>Bolo de Caneca</summary>
+        <div class="receita-conteudo">
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>1 ovo</li>
+                <li>4 colheres de sopa de leite</li>
+                <li>3 colheres de sopa de óleo</li>
+                <li>4 colheres de sopa de açúcar</li>
+                <li>4 colheres de sopa de farinha de trigo</li>
+                <li>2 colheres de sopa de chocolate em pó</li>
+                <li>1 colher de café de fermento em pó</li>
+            </ul>
+            <h3>Modo de Preparo</h3>
+            <ol>
+                <li>Em uma caneca grande, misture o ovo, o leite e o óleo.</li>
+                <li>Adicione o açúcar, a farinha e o chocolate em pó, mexendo até obter uma massa homogênea.</li>
+                <li>Acrescente o fermento e misture delicadamente.</li>
+                <li>Leve ao micro-ondas por aproximadamente 3 minutos.</li>
+                <li>Aguarde esfriar um pouco e sirva.</li>
+            </ol>
+        </div>
+    </details>
+
+    <details class="receita">
+        <summary>Cookies</summary>
+        <div class="receita-conteudo">
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>2 xícaras de farinha de trigo</li>
+                <li>1/2 xícara de manteiga em temperatura ambiente</li>
+                <li>1/2 xícara de açúcar</li>
+                <li>1 ovo</li>
+                <li>1 colher de chá de essência de baunilha</li>
+                <li>1 xícara de gotas de chocolate</li>
+            </ul>
+            <h3>Modo de Preparo</h3>
+            <ol>
+                <li>Misture a manteiga e o açúcar até formar um creme.</li>
+                <li>Adicione o ovo e a essência de baunilha, misturando bem.</li>
+                <li>Acrescente a farinha de trigo aos poucos.</li>
+                <li>Adicione as gotas de chocolate e misture até incorporar.</li>
+                <li>Faça pequenas bolas de massa e distribua em uma assadeira.</li>
+                <li>Asse em forno preaquecido a 180°C por cerca de 12 a 15 minutos.</li>
+                <li>Deixe esfriar antes de servir.</li>
+            </ol>
+        </div>
+    </details>
+
+    <details class="receita">
+        <summary>Sorvete de Banana</summary>
+        <div class="receita-conteudo">
+            <h3>Ingredientes</h3>
+            <ul>
+                <li>4 bananas maduras congeladas</li>
+                <li>2 colheres de sopa de leite (opcional)</li>
+                <li>Canela em pó a gosto (opcional)</li>
+            </ul>
+            <h3>Modo de Preparo</h3>
+            <ol>
+                <li>Corte as bananas em rodelas e congele por pelo menos 4 horas.</li>
+                <li>Coloque as bananas congeladas no liquidificador ou processador.</li>
+                <li>Bata até obter uma textura cremosa de sorvete.</li>
+                <li>Se necessário, adicione o leite para facilitar o processamento.</li>
+                <li>Acrescente canela a gosto e misture.</li>
+                <li>Sirva imediatamente ou leve ao congelador por alguns minutos para firmar mais.</li>
+            </ol>
+        </div>
+    </details>
+</main>
+<img src="assets/Icons/cookie.png" alt="" class="decorativo decorativo-cookie">
+    <script src="js/script.js"></script>
+</body>
+
+</html>

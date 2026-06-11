@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog - Home</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre Mim</a></li>
+                <li><a href="curriculum.html">Currículo</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="receitas.html">Receitas Favoritas</a></li>
+            </ul>
+            <div class="controles-nav">
+                <button id="btn-aumentar" title="Aumentar fonte">
+                    <span class="material-symbols-outlined">zoom_in</span>
+                </button>
+                <button id="btn-diminuir" title="Diminuir fonte">
+                    <span class="material-symbols-outlined">zoom_out</span>
+                </button>
+                <button id="btn-dark-mode" title="Modo Noturno">
+                    <span class="material-symbols-outlined">settings_night_sight</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Entre em Contato</h1>
+        <p>Preencha o formulário abaixo para me enviar uma mensagem.</p>
+
+        <form id="formContato" action="#" method="POST">
+    <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+    </div>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+    </div>
+    <div>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."
+            required></textarea>
+    </div>
+    <button type="submit">Enviar Mensagem</button>
+</form>
+    </main>
+<img src="assets/Icons/celular.png" alt="" class="decorativo decorativo-celular">
+    <script src="js/script.js"></script>
+</body>
+
+</html>
