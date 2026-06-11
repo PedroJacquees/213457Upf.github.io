@@ -4,14 +4,15 @@
 
 /* VARIÁVEIS DE CORES */
 :root {
-    --cor-primaria: #2563eb;       
-    --cor-primaria-hover: #1d4ed8; 
-    --cor-fundo: #e8f1fc;;          
-    --cor-fundo-card: #ffffff;     
-    --cor-texto: #1e293b;         
-    --cor-texto-claro: #64748b;    
-    --cor-borda: #e2e8f0;          
-    --cor-sucesso: #10b981;        
+    --cor-primaria: #2563eb;
+    --cor-primaria-hover: #1d4ed8;
+    --cor-fundo: #e8f1fc;
+    ;
+    --cor-fundo-card: #ffffff;
+    --cor-texto: #1e293b;
+    --cor-texto-claro: #64748b;
+    --cor-borda: #e2e8f0;
+    --cor-sucesso: #10b981;
 }
 
 /* RESET BÁSICO E ESTILOS GLOBAIS */
@@ -119,7 +120,9 @@ main {
 
 
 /* TIPOGRAFIA - TÍTULOS COM PLAYWRITE GB J */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Playwrite GB J', cursive;
 }
 
@@ -156,24 +159,28 @@ p {
 }
 
 /* LISTAS (UL e OL) */
-ul, ol {
+ul,
+ol {
     margin: 16px 0;
     padding-left: 24px;
 }
 
-ul li, ol li {
+ul li,
+ol li {
     margin-bottom: 8px;
     color: var(--cor-texto);
 }
 
 /* Links dentro de listas */
-ul li a, ol li a {
+ul li a,
+ol li a {
     color: var(--cor-primaria);
     text-decoration: none;
     font-weight: 500;
 }
 
-ul li a:hover, ol li a:hover {
+ul li a:hover,
+ol li a:hover {
     text-decoration: underline;
 }
 
@@ -188,7 +195,7 @@ section {
 
 /* IMAGENS */
 img {
-    display: block; 
+    display: block;
     margin: 30px auto;
     max-width: 100%;
     height: auto;
@@ -288,7 +295,8 @@ table {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-th, td {
+th,
+td {
     padding: 14px 16px;
     text-align: left;
     border-bottom: 1px solid var(--cor-borda);
@@ -325,11 +333,25 @@ a:hover {
 }
 
 /* Link de voltar (nas receitas) */
-main > a {
+main>a {
     display: inline-block;
     margin-top: 24px;
     font-weight: 500;
 }
+
+/* IMAGEM DENTRO DA RECEITA*/
+.receita-img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 16px auto 0 auto;
+    border: 3px solid var(--cor-primaria);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
 
 /* UTILITÁRIOS */
 br {
@@ -469,44 +491,45 @@ strong {
         flex-direction: column;
         gap: 16px;
     }
-    
+
     nav ul {
         flex-direction: column;
         gap: 0;
     }
-    
+
     nav ul li {
         width: 100%;
         text-align: center;
     }
-    
+
     nav ul li a {
         display: block;
         padding: 12px 20px;
     }
-    
+
     .controles-nav {
         justify-content: center;
     }
-    
+
     main {
         margin: 20px 16px;
         padding: 20px;
     }
-    
+
     h1 {
         font-size: 1.6rem;
     }
-    
+
     h2 {
         font-size: 1.2rem;
     }
-    
+
     table {
         font-size: 0.9rem;
     }
-    
-    th, td {
+
+    th,
+    td {
         padding: 10px 12px;
     }
 }
@@ -621,13 +644,13 @@ strong {
 
 /* MODO NOTURNO (DARK MODE) */
 .dark-mode {
-    --cor-primaria: #60a5fa;       
+    --cor-primaria: #60a5fa;
     --cor-primaria-hover: #93c5fd;
-    --cor-fundo: #0c1929;          
-    --cor-fundo-card: #1e293b;     
-    --cor-texto: #f1f5f9;        
-    --cor-texto-claro: #94a3b8;    
-    --cor-borda: #334155;         
+    --cor-fundo: #0c1929;
+    --cor-fundo-card: #1e293b;
+    --cor-texto: #f1f5f9;
+    --cor-texto-claro: #94a3b8;
+    --cor-borda: #334155;
 }
 
 /* Ajustes específicos para dark mode */
