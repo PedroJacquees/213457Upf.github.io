@@ -2,9 +2,21 @@
 // 1. MODO NOTURNO (Dark Mode)
 const btnDarkMode = document.getElementById('btn-dark-mode');
 
+// Ao carregar a página, verifica se o dark mode estava ativo
+if (localStorage.getItem('darkMode') === 'ativo') {
+    document.body.classList.add('dark-mode');
+}
+
 if (btnDarkMode) {
     btnDarkMode.addEventListener('click', function() {
         document.body.classList.toggle('dark-mode');
+
+        // Salva ou remove a preferência no localStorage
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'ativo');
+        } else {
+            localStorage.removeItem('darkMode');
+        }
     });
 }
 
